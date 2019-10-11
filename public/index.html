@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+    <title>PDX Restaurant Roulette</title>
+</head> 
+<body>
+    <script>
+            handleForm = () => {
+                console.log(document.getElementById('location').value);
+                console.log(document.getElementById('meal').value);
+                console.log(document.getElementById('range').value);
+                return false;
+
+                resultsHandler = () => {
+                    const results = document.getElementById('results').textContent = "You should go to: "
+                }
+            };
+            
+    </script>
+    <div>
+    <h1 class="header">PDX Restaurant Roulette</h1>
+    <h3 class="header">Because Sometimes It's Hard To Pick</h3>
+    <div class="picker">
+    <form action="#">
+        <label>Location</label>
+        <input id="location" type="text" placeholder="ex. Portland, OR"><br/>
+        <label>Meal</label>
+        <input id="meal" type="text" placeholder="ex: Dinner"><br/>
+        <label>Budget</label>
+        <input id="range" type="text" placeholder="$-$$$$">
+        <button type="submit" onclick="handleForm()">Feed Me</button>
+    </form>
+    </div>  
+    <div>
+        <h1 id="results"></h1>
+    </div>
+    
+    </div>
+    
+</body>
+
+<script type="text/javascript" src="/index.js"></script>
+</html>

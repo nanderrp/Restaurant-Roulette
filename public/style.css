@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    align-content: center;
+}
+
+.picker {
+    display: block;
+    text-align: center;
+    align-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+}
+
+button {
+    margin: 20px;
+}
